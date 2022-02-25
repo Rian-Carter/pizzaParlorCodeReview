@@ -26,7 +26,7 @@ Pizza.prototype.onePizzaCost = function() {
 }
 
 $(document).ready(function() {
-  $("#order-form").submit(function(event) {
+  $("#pizzaFormSubmit").click(function(event) {
     event.preventDefault();
     let nameInput = $("#customerNameInput").val();
     let sizeInput = $("#pizzaSizeInput").val();
@@ -39,7 +39,13 @@ $(document).ready(function() {
     let customerOne = new Customer(nameInput);
     customerOne.order.push(onePizza);
 
-    $(".output").text("Cost = $" + onePizza.cost);
+    $(".output").show()
+    $(".outName").text(customerOne.name);
+    for (let i = 0; i < customerOne.order.length; i++) {
+      let i;
+      $(".outOrder").append("One " + customerOne.order[i].size + " pizza with " + customerOne.order[i].numberOfToppings + " toppings." + '<br>');
+    }
+    $(".outputTotal").text(customerOne.orderCost);
   });
 });
 
