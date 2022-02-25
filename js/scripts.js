@@ -5,4 +5,5 @@ function Pizza(size, toppings) {
 
 function Customer(name) {
   this.name = name;
+  this.order = [];
 }
