@@ -24,11 +24,11 @@
 
 ## Tests:
 
-#### Describe: function
+#### Describe: Pizza()
 
-* Test:
-* Code:
-* Expected Outpout:
+* Test: "It should return a Pizza object with two properties for toppings and size"
+* Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+* Expected Outpout: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
 ## Known Bugs
 
