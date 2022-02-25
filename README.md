@@ -27,7 +27,7 @@
 #### Describe: Pizza()
 
 * Test: "It should return a Pizza object with two properties for toppings and size"
-* Code: const myPizza = new Pizza(["anchovies", "pineapple"], "medium");
+* Code: myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 * Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
 #### Describe: Customer()
@@ -35,6 +35,10 @@
 * Test: "It should return a Customer object with customer name"
 * Code: Customer = new Customer("Rian");
 * Expected Output: Custer {name: 'Rian'}
+
+* Test: "It should return a Customer object with two properties for customer name and empty array of pizzas"
+* Code: myCustomer = new Customer("Rian");
+* Expected Output: Customer { name: 'Rian', order: Array(0) }
 
 ## Known Bugs
 
