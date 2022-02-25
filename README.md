@@ -33,12 +33,16 @@
 #### Describe: Customer()
 
 * Test: "It should return a Customer object with customer name"
-* Code: Customer = new Customer("Rian");
-* Expected Output: Custer {name: 'Rian'}
+* Code: myCustomer = new Customer("Rian");
+* Expected Output: Customer {name: 'Rian'}
 
 * Test: "It should return a Customer object with two properties for customer name and empty array of pizzas"
 * Code: myCustomer = new Customer("Rian");
 * Expected Output: Customer { name: 'Rian', order: Array(0) }
+
+* Test: "It should return a Customer object with customer name, order, and orderCost"
+* Code: myCustomer = new Customer("Rian", ["small", "medium"]);
+* Expected Output: Custer {name: 'Rian', order: Array(0), orderCost: 0}
 
 ## Known Bugs
 
