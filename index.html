@@ -5,9 +5,51 @@
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
-  <title>Planet Pizza</title>
+  <title>Pizza Planet</title>
 </head>
 <body>
-  <h1>Welcome to Planet Pizza</h1>
+  <img src="https://i.pinimg.com/originals/e2/a6/f8/e2a6f832ddb9bbd5fdc4bb08f4bb798c.jpg" alt="pizza planet logo">
+  <h1>Welcome to Pizza Planet</h1>
+
+  <form class="order-form">
+    <div id="customerName" class="form-group">
+      <h2>Name:</h2>
+      <input id="customerNameInput" type="text">
+    </div><hr>
+    <div id="newPizzaSection">
+      <div class="newPizza">
+        <div class="form-group">
+          <h2>Please Select a Size:</h2>
+          <select class="pizzaSizeInput">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+        </div><hr>
+        <div class="pizzaToppings" class="form-group">
+          <h2>Choose Your Toppings</h2>
+          <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+          <input type="checkbox" name="toppings" value="mushroom"> Mushroom<br>
+          <input type="checkbox" name="toppings" value="sausage"> Sausage<br>
+          <input type="checkbox" name="toppings" value="blackOlive"> Black Olive<br>
+          <input type="checkbox" name="toppings" value="bellPeppers"> Bell Peppers<br>
+          <input type="checkbox" name="toppings" value="freshGarlic"> Fresh Garlic<br>
+          <input type="checkbox" name="toppings" value="redOnion"> Red Onion<br>
+          <input type="checkbox" name="toppings" value="jalapeno"> Jalapeno<br>
+          <input type="checkbox" name="toppings" value="pineapple"> Pineapple<br>
+          <input type="checkbox" name="toppings" value="extraCheese"> Extra Cheese<br>
+        </div><hr>
+      </div>
+    </div>
+    <div class="buttons">
+      <button id="pizzaFormSubmit" type="submit" class="btn">Place Order</button>
+    </div>
+  </form>
+  <div class="output">
+    <h3>Confirm Order:</h3>
+    <h4><span class="outName"></span>, your order will be ready soon!</h4>
+    <p><span class=outOrder></span></p>
+    <p>Your total is: <span class="outputTotal"></p>
+  </div>
 </body>
 </html>
