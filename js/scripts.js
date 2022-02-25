@@ -25,5 +25,21 @@ Pizza.prototype.onePizzaCost = function() {
   }
 }
 
-let customer = new Customer(nameInput);
-customer.order.push(pizzaOne);
+$(document).ready(function() {
+  $("#order-form").submit(function(event) {
+    event.preventDefault();
+    let nameInput = $("#customerNameInput").val();
+    let sizeInput = $("#pizzaSizeInput").val();
+    let toppingsInput = [];
+    $("#pizzaToppings input:checkbox[name=toppings]:checked").each(function() {
+      toppingsInput.push($(this).val())
+    });
+
+    let onePizza = new Pizza(sizeInput, toppingsInput);
+    let customerOne = new Customer(nameInput);
+    customerOne.order.push(onePizza);
+
+    $(".output").text("Cost = $" + onePizza.cost);
+  });
+});
+
