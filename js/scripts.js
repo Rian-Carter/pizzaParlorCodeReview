@@ -25,17 +25,5 @@ Pizza.prototype.onePizzaCost = function() {
   }
 }
 
-$("order-form").submit(function(event) {
-  event.preventDefault();
-  let nameInput = $("#customerNameInput").val();
-  let customer = new Customer(nameInput);
-  $(this).find(".pizzaToppings input:checkbox[name=topping]:checked").each(function() {
-    toppingsInput.push($(this).val());
-  });
-  let Pizza = new Pizza(sizeInput, toppingsInput);
-  customer.order.push(Pizza);
-
-  newPizza.countToppings();
-  newPizza.onePizzaCost();
-  Customer.orderCost += newPizza.cost;
-});
+let customer = new Customer(nameInput);
+customer.order.push(pizzaOne);
