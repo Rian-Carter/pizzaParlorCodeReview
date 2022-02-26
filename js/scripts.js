@@ -32,5 +32,6 @@ $(document).ready(function() {
     let resultHold = pizzaPie.calculate();
     $('.name').text("Hello, " + customerName + ", your order will be ready shortly!");
     $('.total').text("$" + resultHold + " is your total");
+    $('form#orderPizza')[0].reset();
   })
 });
