@@ -20,5 +20,18 @@ Pizza.prototype.calculate = function() {
 $(document).ready(function() {
   $("form#orderPizza").submit(function(event) {
     event.preventDefault();
+    let customerName = $('.customerName').val();
+    console.log(customerName);
+    let pizzaSize = $('input:radio[name=pizzaSize]:checked').val();
+    console.log(pizzaSize);
+    let topping = [];
+    $('input:checkbox[name=toppings]:checked').each(function() {
+      const toppingList = $(this).val();
+      toppings.push(toppingList)
+    })
+    console.log(topping);
+    let pizzaPie = new Pizza(pizzaSize, toppings);
+    console.log(pizzaPie);
+    $('.name').text("Hello, ' + customerName + ', your order will be ready shortly!");
   })
 });
