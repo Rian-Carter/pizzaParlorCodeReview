@@ -1,5 +1,10 @@
 body {
-  background-color: rgba(109, 117, 117, 0.698);
+  background-color: #eff0f4;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: #a35750;
   text-align: center;
 }
 
@@ -10,6 +15,6 @@ body {
   width: auto;
 }
 
-h1 {
-  text-align: center;
+#output {
+  font-weight: bold;
 }
