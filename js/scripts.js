@@ -16,3 +16,9 @@ Pizza.prototype.calculate = function() {
   pizzaTotal += this.toppings.length * 1;
   return pizzaTotal;
 };
+
+$(document).ready(function() {
+  $("form#orderPizza").submit(function(event) {
+    event.preventDefault();
+  })
+});
