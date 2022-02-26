@@ -17,4 +17,9 @@ body {
 
 #output {
   font-weight: bold;
+  width: auto;
+  border: 5px solid #a35750;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
 }
