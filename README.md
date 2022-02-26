@@ -30,6 +30,8 @@
 * Code: myPizza = new Pizza(["anchovies", "pineapple"], "medium");
 * Expected Output: Pizza { toppings: ["anchovies", "pineapple"], size: "medium" }
 
+* Test: 
+
 ## Known Bugs
 
 * There are no known bugs at this time
