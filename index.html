@@ -17,9 +17,11 @@
     <form id="orderPizza">
       <div class="form-group">
         <div class="jumbotron">
-          <label for="customerName">Please enter your name:</label>
+          <h4>Please enter your name:</h4>
+          <!-- <label for="customerName">Please enter your name:</label> -->
           <input type="text" class="customerName">
         </div>
+        <hr>
         <div class="jumbotron">
           <h4>Please select a size:</h4>
           <div class="radioButton">
@@ -44,24 +46,37 @@
             </label>
             <br>
           </div>
+          <hr>
         </div>
           <hr>
           <div class="jumbotron">
             <div class="toppings">
-              <label for="pizzaToppings">Select your toppings:</label><br>
+              <h4>Please select your toppings:</h4>
+              <br>
               <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
               <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
               <input type="checkbox" name="toppings" value="jalapeno">Jalapeno<br>
               <input type="checkbox" name="toppings" value="sausage">Sausage<br>
             </div>
+            <br>
+            <br>
+            <button type="submit" class="placeOrder">Submit your Order</button>
           </div>
         </div>
       </div>
       <hr>
-      <button type="submit" class="placeOrder">Submit your Order</button>
     </form>
   </div>
     <p class="name"></p>
     <p class="total"></p>
+    <hr>
+    <footer>
+      <h4>Contact Info:</h4>
+      <p>t: 123.456.7890</p>
+      <p>e: pizzaplanet@pizzaplanet.com</p>
+      <div id="pizzaImage">
+        <img src="https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image of pizzas">
+      </div>
+    </footer>
 </body>
 </html>
