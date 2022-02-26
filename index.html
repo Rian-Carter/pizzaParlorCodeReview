@@ -12,18 +12,17 @@
     <img src="https://i.pinimg.com/originals/e2/a6/f8/e2a6f832ddb9bbd5fdc4bb08f4bb798c.jpg" alt="pizza planet logo">
   </div>
   <div class="container">
-    <h1>Welcome to Pizza Planet</h1>
+    <h1>*** Welcome to Pizza Planet ***</h1>
     <hr>
     <form id="orderPizza">
       <div class="form-group">
         <div class="jumbotron">
           <h4>Please enter your name:</h4>
-          <!-- <label for="customerName">Please enter your name:</label> -->
           <input type="text" class="customerName">
         </div>
         <hr>
         <div class="jumbotron">
-          <h5>All pizzas come with mozzarella cheese and red sauce</h5>
+          <h3>All pizzas come with mozzarella cheese and red sauce</h3>
           <hr>
           <h4>Please select a size:</h4>
           <div class="radioButton">
@@ -52,24 +51,25 @@
           <hr>
           <div class="jumbotron">
             <div class="toppings">
-              <h4>Please select your toppings:</h4>
-              <h5>*additional toppings are $1ea*</h5>
+              <h2>Please select your toppings:</h2>
+              <h4>*additional toppings are $1ea*</h4>
               <br>
               <hr>
-              <h5>Meats</h5>
+              <h3>Meats</h3>
               <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
               <input type="checkbox" name="toppings" value="sausage">Sausage<br>
               <input type="checkbox" name="toppings" value="bacon">Bacon<br>
               <input type="checkbox" name="toppings" value="canadianBacon">Canadian Bacon<br>
               <hr>
-              <h5>Veggies</h5>
+              <h3>Veggies</h3>
               <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
               <input type="checkbox" name="toppings" value="bellPeppers">Bell Peppers<br>
               <input type="checkbox" name="toppings" value="redOnions">Red Onions<br>
+              <input type="checkbox" name="toppings" value="spinach">Spinach<br>
               <input type="checkbox" name="toppings" value="roastedGarlic">Roasted Garlic<br>
               <input type="checkbox" name="toppings" value="jalapeno">Jalapeno<br>
               <hr>
-              <h5>Does Not Belong On Pizza</h5>
+              <h4>Does Not Belong On Pizza</h4>
               <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
             </div>
             <br>
@@ -81,9 +81,11 @@
       <hr>
     </form>
   </div>
+  <div id="output">
     <p class="name"></p>
     <p class="total"></p>
     <hr>
+  </div>
     <footer>
       <h4>Contact Info:</h4>
       <p>t: 123.456.7890</p>
